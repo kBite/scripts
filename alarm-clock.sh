@@ -6,6 +6,9 @@
 # $1 needs to be 'at' or 'in'.
 # - 'at' defines a specific time hh:mm via at-command
 # - 'in' defines a period of time via sleep-command
+# Examples:
+#	$0 at 20:00
+#	$0 in 20m
 
 time=$2
 sound=~/music/alarm-beep/loud.alarm.clock.buzzer.mp3
