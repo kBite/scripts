@@ -22,6 +22,7 @@
 # version:      2017082500
 #
 # changelog:    20160918  removed fixed path and added parameter 'ZONE' instead
+#               20170825  add header and apply shellcheck suggestions
 # -----------------------------------------------------------------------------
 
 zone="${1}"
