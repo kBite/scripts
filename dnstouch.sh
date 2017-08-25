@@ -7,13 +7,13 @@
 #               It simply updates a zone file's serial number by adding +1.
 #               Serial number is expected to be formatted as %Y%m%d[0-9]{2}.
 #
-#               'needle' has to match your serial numbers line comment!
+#               'needle' has to match your serial number's line comment!
 #               (see 'examples')
 #
 # options:      dnstouch.sh [path/to/file.zone]
 #
 # examples:     # dnstouch.sh /etc/bind/zones/my.zone
-#               file.zone:              2017082500; serial
+#               my.zone:              2017082500; serial
 #
 # credit:       www.stackoverflow.com/users/34514/tombart
 # source:       unix.stackexchange.com/q/197988
