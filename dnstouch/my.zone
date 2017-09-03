@@ -1,7 +1,7 @@
 $TTL 1h
 $ORIGIN my.local
 @ IN SOA dns.my.local. hostmaster.my.local. (
-                                               2017090301  ; serial
+                                               2017090302  ; serial
                                                1d          ; refresh
                                                2h          ; retry
                                                30d         ; expire

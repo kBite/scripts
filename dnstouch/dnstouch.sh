@@ -34,8 +34,7 @@
 program="${0##*/}"
 date="$(date +%Y%m%d)"
 needle="serial"              # we're looking for a line containing this comment
-#needleSet="false"
-needleSet="true"
+needleSet="false"
 
 # -----------------------------------------------------------------------------
 # ---[ functions ]-------------------------------------------------------------
@@ -44,8 +43,8 @@ needleSet="true"
 usage () {
   echo "Description:"
   echo "  This script simply updates a zone file's serial number by adding +1."
-  echo "  Serial number is expected to be formatted as '%Y%m%d[0-9]{2}'."
   echo "  Serial number is identified by comment containing \$needle."
+  echo "  New serial number will be formatted as %Y%m%d[0-9]{2}"
   echo ""
   echo "  First time usage: configure \$needle and \$needleSet inline."
   echo ""
@@ -63,9 +62,8 @@ usage () {
 
 needleSet () {
   if [[ "${needleSet}" == "false" ]]; then
-    echo "[INFO] Please check and set the script's variable 'needle'"
-    echo "[INFO] to match your zone file's serial number line comment."
-    echo "[INFO] If set, change 'needleSet' to 'true',"
+    echo "Please configure \$needle and set \$needleSet to anything but 'false'."
+    echo "Current settings: \$needle=${needle} and \$needleSet=${needleSet}"
     exit -1
   fi
 }

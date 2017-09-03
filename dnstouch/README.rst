@@ -12,9 +12,9 @@ first time usage
 ----------------
 
 To find the serial number ``$needle`` matches the line's comment
-(see ``my.zone`` as an example zone file). To make sure you won't experience
-unnecessary errors, you'll have to confirm configuring ``$needle`` to your
-needs by setting ``$needleSet`` inline to anything but ``false``.
+(see example zone file ``my.zone``). To make sure you won't experience
+unnecessary errors, you'll have to configure ``$needle`` to your needs
+and set ``$needleSet`` inline to anything but ``false``.
 
 example
 -------
