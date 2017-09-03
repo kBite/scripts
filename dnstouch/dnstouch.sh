@@ -5,9 +5,10 @@
 #
 # description:  This script is inspired by tombart's answer on stackexchange.
 #               It simply updates a zone file's serial number by adding +1.
-#               Serial number is expected to be formatted as %Y%m%d[0-9]{2}.
+#               New serial number will be formatted as %Y%m%d[0-9]{2};
+#                 e.g. 2017090308
 #
-#               'needle' has to match your serial numbers line comment!
+#               'needle' has to match your serial number's line comment!
 #               (see 'examples')
 #
 # options:      dnstouch.sh [path/to/my.zone]

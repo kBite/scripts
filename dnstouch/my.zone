@@ -1,0 +1,15 @@
+$TTL 1h
+$ORIGIN my.local
+@ IN SOA dns.my.local. hostmaster.my.local. (
+                                               2017090301  ; serial
+                                               1d          ; refresh
+                                               2h          ; retry
+                                               30d         ; expire
+                                               1h )        ; negative ttl
+
+                            IN  NS      dns.my.local.
+                            IN  NS      dns2.my.local.
+                            IN  MX      1 mx0.mylocal.
+
+gateway                     IN  A       192.168.0.1
+workstation                 IN  A       192.168.0.2
